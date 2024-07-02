@@ -12,6 +12,8 @@ def main():
 
     while True:
         ret, frame = cap.read()
+        print(ret)
+        print(frame)
         if not ret:
             st.write("Impossible d'accéder à la webcam.")
             break
